@@ -37,7 +37,6 @@ public class DbService : IDbService
             command.Parameters.AddWithValue("@booking_id", reservationId.BookingId);
             
             
-            
             await transaction.CommitAsync(); 
         }
         catch (Exception)
